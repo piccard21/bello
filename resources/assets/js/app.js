@@ -9,6 +9,7 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import App from './App.vue'
 import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
@@ -26,5 +27,6 @@ Vue.config.productionTip = false
 
 const app = new Vue({
     el: '#app',
-    router
+    router,
+    render: h => h(App)
 });
