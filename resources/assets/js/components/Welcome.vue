@@ -36,54 +36,6 @@
                 </v-carousel>
             </v-flex>
         </v-layout>
-        <v-layout row wrap>
-            <v-flex xs12 sm6>
-                <v-card>
-                    <v-card-media
-                            class="white--text"
-                            height="200px"
-                            src="http://lorempixel.com/400/200/nature"
-                    >
-                        <v-container fill-height fluid>
-                            <v-layout fill-height>
-                                <v-flex xs12 align-end flexbox>
-                                    <span class="headline">Top 10 Australian beaches</span>
-                                </v-flex>
-                            </v-layout>
-                        </v-container>
-                    </v-card-media>
-                    <v-card-title>
-                        <div>
-                            <h3 class="headline mb-0">Lorem ipsum</h3>
-                            <span class="grey--text">11.04.2154</span><br>
-                            <span>Whitehaven Beach</span><br>
-                            <span>Whitsunday Island, Whitsunday Islands</span>
-                        </div>
-                    </v-card-title>
-                    <v-card-actions>
-                        <v-btn flat color="info">Share</v-btn>
-                        <v-btn flat color="info">Explore</v-btn>
-                    </v-card-actions>
-                </v-card>
-            </v-flex>
-            <v-flex xs12 sm6>
-                <v-card>
-                    <v-card-media src="http://lorempixel.com/400/200/fashion" height="200px">
-                    </v-card-media>
-                    <v-card-title primary-title>
-                        <div>
-                            <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
-                            <span class="grey--text">21.02.2121</span><br>
-                            <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
-                        </div>
-                    </v-card-title>
-                    <v-card-actions>
-                        <v-btn flat color="info">Share</v-btn>
-                        <v-btn flat color="info">Explore</v-btn>
-                    </v-card-actions>
-                </v-card>
-            </v-flex>
-        </v-layout>
     </v-container>
 </template>
 

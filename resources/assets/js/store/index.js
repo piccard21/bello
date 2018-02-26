@@ -28,7 +28,15 @@ export const store = new Vuex.Store(
             user: {
                 id: 1,
                 boards: ['asdasd']
-            }
+            },
+            boards: [{
+                title: 'Whatever',
+                location: 'https://www.popsugar.com/entertainment/Best-Elvis-Songs-Live-43883018',
+                imageUrl: 'https://media1.popsugar-assets.com/files/thumbor/GhQL-KCsBotJ8rUz0ucaQVMrwvE/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/08/15/657/n/1922283/tmp_k7ktFt_7049ed242d13fb7f_elvis.jpg',
+                description: 'Lorem ipsum dolor set',
+                date: new Date(),
+                id: 'kfdlsfjslakl12'
+            }]
         },
         getters: {
             carouselItems(state) {
@@ -43,9 +51,37 @@ export const store = new Vuex.Store(
                         return item.id === itemId
                     })
                 }
+            },
+            boards(state) {
+                return state.boards.sort((itemA, itemB) => {
+                    return itemA.title < itemB.title;
+                });
+            },
+            board(state) {
+                return (itemId) => {
+                    return state.boards.find((item) => {
+                        return item.id === itemId
+                    })
+                }
             }
-
         },
-        mutations: {},
-        actions: {}
+        mutations: {
+            createBoard(state, payload) {
+                state.boards.push(payload)
+            }
+        },
+        actions: {
+            createBoard ({commit}, payload) {
+                const board = {
+                    title: payload.title,
+                    location: payload.location,
+                    imageUrl: payload.imageUrl,
+                    description: payload.description,
+                    date: payload.date,
+                    id: 'kfdlsfjslakl12'
+                }
+                // Reach out to firebase and store it
+                commit('createBoard', board)
+            }
+        }
     });

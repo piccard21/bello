@@ -54,6 +54,14 @@
                 title: 'Home',
                 link: '/home'
             },{
+                icon: 'add',
+                title: 'Board',
+                link: '/board'
+            },{
+                icon: 'list',
+                title: 'Boards',
+                link: '/boards'
+            },{
                 icon: 'lock_open',
                 title: 'Login',
                 link: '/login'

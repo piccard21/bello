@@ -5,6 +5,8 @@ import Home from '../components/Home'
 import Login from '../components/Login'
 import Signup from '../components/Signup'
 import CarouselItem from '../components/splash/CarouselItem'
+import CreateBoard from '../components/board/CreateBoard'
+import Boards from '../components/board/Boards'
 
 Vue.use(Router)
 
@@ -31,6 +33,14 @@ export default new Router({
             name: 'CarouselItem',
             props: true,
             component: CarouselItem
+        },{
+            path: '/boards',
+            name: 'boards',
+            component: Boards
+        },{
+            path: '/board',
+            name: 'createBoard',
+            component: CreateBoard
         }
     ],
     // mode: "history"

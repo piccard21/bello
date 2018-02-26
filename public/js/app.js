@@ -43298,6 +43298,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 title: 'Home',
                 link: '/home'
             }, {
+                icon: 'add',
+                title: 'Board',
+                link: '/board'
+            }, {
+                icon: 'list',
+                title: 'Boards',
+                link: '/boards'
+            }, {
                 icon: 'lock_open',
                 title: 'Login',
                 link: '/login'
@@ -43455,6 +43463,12 @@ if (false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Signup___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_Signup__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_splash_CarouselItem__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_splash_CarouselItem___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_splash_CarouselItem__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_board_CreateBoard__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_board_CreateBoard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_board_CreateBoard__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_board_Boards__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_board_Boards___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_board_Boards__);
+
+
 
 
 
@@ -43487,6 +43501,14 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
         name: 'CarouselItem',
         props: true,
         component: __WEBPACK_IMPORTED_MODULE_6__components_splash_CarouselItem___default.a
+    }, {
+        path: '/boards',
+        name: 'boards',
+        component: __WEBPACK_IMPORTED_MODULE_8__components_board_Boards___default.a
+    }, {
+        path: '/board',
+        name: 'createBoard',
+        component: __WEBPACK_IMPORTED_MODULE_7__components_board_CreateBoard___default.a
     }]
     // mode: "history"
 }));
@@ -46520,54 +46542,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'App',
@@ -46737,156 +46711,6 @@ var render = function() {
                     ]
                   )
                 })
-              )
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
-        [
-          _c(
-            "v-flex",
-            { attrs: { xs12: "", sm6: "" } },
-            [
-              _c(
-                "v-card",
-                [
-                  _c(
-                    "v-card-media",
-                    {
-                      staticClass: "white--text",
-                      attrs: {
-                        height: "200px",
-                        src: "http://lorempixel.com/400/200/nature"
-                      }
-                    },
-                    [
-                      _c(
-                        "v-container",
-                        { attrs: { "fill-height": "", fluid: "" } },
-                        [
-                          _c(
-                            "v-layout",
-                            { attrs: { "fill-height": "" } },
-                            [
-                              _c(
-                                "v-flex",
-                                {
-                                  attrs: {
-                                    xs12: "",
-                                    "align-end": "",
-                                    flexbox: ""
-                                  }
-                                },
-                                [
-                                  _c("span", { staticClass: "headline" }, [
-                                    _vm._v("Top 10 Australian beaches")
-                                  ])
-                                ]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("v-card-title", [
-                    _c("div", [
-                      _c("h3", { staticClass: "headline mb-0" }, [
-                        _vm._v("Lorem ipsum")
-                      ]),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "grey--text" }, [
-                        _vm._v("11.04.2154")
-                      ]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_vm._v("Whitehaven Beach")]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [
-                        _vm._v("Whitsunday Island, Whitsunday Islands")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-actions",
-                    [
-                      _c("v-btn", { attrs: { flat: "", color: "info" } }, [
-                        _vm._v("Share")
-                      ]),
-                      _vm._v(" "),
-                      _c("v-btn", { attrs: { flat: "", color: "info" } }, [
-                        _vm._v("Explore")
-                      ])
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-flex",
-            { attrs: { xs12: "", sm6: "" } },
-            [
-              _c(
-                "v-card",
-                [
-                  _c("v-card-media", {
-                    attrs: {
-                      src: "http://lorempixel.com/400/200/fashion",
-                      height: "200px"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("v-card-title", { attrs: { "primary-title": "" } }, [
-                    _c("div", [
-                      _c("h3", { staticClass: "headline mb-0" }, [
-                        _vm._v("Kangaroo Valley Safari")
-                      ]),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "grey--text" }, [
-                        _vm._v("21.02.2121")
-                      ]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("div", [
-                        _vm._v("Located two hours south of Sydney in the "),
-                        _c("br"),
-                        _vm._v("Southern Highlands of New South Wales, ...")
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "v-card-actions",
-                    [
-                      _c("v-btn", { attrs: { flat: "", color: "info" } }, [
-                        _vm._v("Share")
-                      ]),
-                      _vm._v(" "),
-                      _c("v-btn", { attrs: { flat: "", color: "info" } }, [
-                        _vm._v("Explore")
-                      ])
-                    ],
-                    1
-                  )
-                ],
-                1
               )
             ],
             1
@@ -65258,7 +65082,15 @@ var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
         user: {
             id: 1,
             boards: ['asdasd']
-        }
+        },
+        boards: [{
+            title: 'Whatever',
+            location: 'https://www.popsugar.com/entertainment/Best-Elvis-Songs-Live-43883018',
+            imageUrl: 'https://media1.popsugar-assets.com/files/thumbor/GhQL-KCsBotJ8rUz0ucaQVMrwvE/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/08/15/657/n/1922283/tmp_k7ktFt_7049ed242d13fb7f_elvis.jpg',
+            description: 'Lorem ipsum dolor set',
+            date: new Date(),
+            id: 'kfdlsfjslakl12'
+        }]
     },
     getters: {
         carouselItems: function carouselItems(state) {
@@ -65273,10 +65105,40 @@ var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
                     return item.id === itemId;
                 });
             };
+        },
+        boards: function boards(state) {
+            return state.boards.sort(function (itemA, itemB) {
+                return itemA.title < itemB.title;
+            });
+        },
+        board: function board(state) {
+            return function (itemId) {
+                return state.boards.find(function (item) {
+                    return item.id === itemId;
+                });
+            };
         }
     },
-    mutations: {},
-    actions: {}
+    mutations: {
+        createBoard: function createBoard(state, payload) {
+            state.boards.push(payload);
+        }
+    },
+    actions: {
+        createBoard: function createBoard(_ref, payload) {
+            var commit = _ref.commit;
+
+            var board = {
+                title: payload.title,
+                location: payload.location,
+                imageUrl: payload.imageUrl,
+                description: payload.description,
+                date: payload.date,
+                id: 'kfdlsfjslakl12'
+                // Reach out to firebase and store it
+            };commit('createBoard', board);
+        }
+    }
 });
 
 /***/ }),
@@ -66384,6 +66246,578 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-2ffe4094", module.exports)
+  }
+}
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(71)
+/* template */
+var __vue_template__ = __webpack_require__(72)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/board/CreateBoard.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4bd1480c", Component.options)
+  } else {
+    hotAPI.reload("data-v-4bd1480c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            title: '',
+            location: '',
+            imageUrl: '',
+            description: ''
+        };
+    },
+
+    computed: {
+        formIsValid: function formIsValid() {
+            return this.title !== '' && this.location !== '' && this.imageUrl !== '' && this.description !== '';
+        }
+    },
+    methods: {
+        onCreateBoard: function onCreateBoard() {
+            if (!this.formIsValid) {
+                return;
+            }
+            var boardData = {
+                title: this.title,
+                location: this.location,
+                imageUrl: this.imageUrl,
+                description: this.description,
+                date: new Date()
+            };
+            this.$store.dispatch('createBoard', boardData);
+            this.$router.push('/boards');
+        }
+    }
+});
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "" } },
+        [
+          _c("v-flex", { attrs: { xs12: "", sm6: "", "offset-sm3": "" } }, [
+            _c("h2", { staticClass: "primary--text" }, [
+              _vm._v("Create a new Board")
+            ])
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-layout",
+        { attrs: { row: "" } },
+        [
+          _c("v-flex", { attrs: { xs12: "" } }, [
+            _c(
+              "form",
+              {
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    _vm.onCreateBoard($event)
+                  }
+                }
+              },
+              [
+                _c(
+                  "v-layout",
+                  { attrs: { row: "" } },
+                  [
+                    _c(
+                      "v-flex",
+                      { attrs: { xs12: "", sm6: "", "offset-sm3": "" } },
+                      [
+                        _c("v-text-field", {
+                          attrs: {
+                            name: "title",
+                            label: "Title",
+                            id: "title",
+                            required: ""
+                          },
+                          model: {
+                            value: _vm.title,
+                            callback: function($$v) {
+                              _vm.title = $$v
+                            },
+                            expression: "title"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-layout",
+                  { attrs: { row: "" } },
+                  [
+                    _c(
+                      "v-flex",
+                      { attrs: { xs12: "", sm6: "", "offset-sm3": "" } },
+                      [
+                        _c("v-text-field", {
+                          attrs: {
+                            name: "location",
+                            label: "Location",
+                            id: "location",
+                            required: ""
+                          },
+                          model: {
+                            value: _vm.location,
+                            callback: function($$v) {
+                              _vm.location = $$v
+                            },
+                            expression: "location"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-layout",
+                  { attrs: { row: "" } },
+                  [
+                    _c(
+                      "v-flex",
+                      { attrs: { xs12: "", sm6: "", "offset-sm3": "" } },
+                      [
+                        _c("v-text-field", {
+                          attrs: {
+                            name: "imageUrl",
+                            label: "Image URL",
+                            id: "image-url",
+                            required: ""
+                          },
+                          model: {
+                            value: _vm.imageUrl,
+                            callback: function($$v) {
+                              _vm.imageUrl = $$v
+                            },
+                            expression: "imageUrl"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-layout",
+                  { attrs: { row: "" } },
+                  [
+                    _c(
+                      "v-flex",
+                      { attrs: { xs12: "", sm6: "", "offset-sm3": "" } },
+                      [
+                        _c("img", {
+                          attrs: { src: _vm.imageUrl, height: "150" }
+                        })
+                      ]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-layout",
+                  { attrs: { row: "" } },
+                  [
+                    _c(
+                      "v-flex",
+                      { attrs: { xs12: "", sm6: "", "offset-sm3": "" } },
+                      [
+                        _c("v-text-field", {
+                          attrs: {
+                            name: "description",
+                            label: "Description",
+                            id: "description",
+                            "multi-line": "",
+                            required: ""
+                          },
+                          model: {
+                            value: _vm.description,
+                            callback: function($$v) {
+                              _vm.description = $$v
+                            },
+                            expression: "description"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "v-layout",
+                  { attrs: { row: "" } },
+                  [
+                    _c(
+                      "v-flex",
+                      { attrs: { xs12: "", sm6: "", "offset-sm3": "" } },
+                      [
+                        _c(
+                          "v-btn",
+                          {
+                            staticClass: "primary",
+                            attrs: {
+                              disabled: !_vm.formIsValid,
+                              type: "submit"
+                            }
+                          },
+                          [_vm._v("Create Board")]
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ])
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-4bd1480c", module.exports)
+  }
+}
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(74)
+/* template */
+var __vue_template__ = __webpack_require__(75)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/board/Boards.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-e8ff3f66", Component.options)
+  } else {
+    hotAPI.reload("data-v-e8ff3f66", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 74 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    computed: {
+        boards: function boards() {
+            return this.$store.getters.boards;
+        }
+    }
+});
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-container",
+    [
+      _c(
+        "v-layout",
+        { attrs: { row: "" } },
+        [
+          _c(
+            "v-flex",
+            { attrs: { xs12: "", sm6: "", "offset-sm3": "" } },
+            [
+              _c(
+                "v-card",
+                [
+                  _c(
+                    "v-toolbar",
+                    { attrs: { color: "primary", dark: "" } },
+                    [
+                      _c("v-toolbar-side-icon"),
+                      _vm._v(" "),
+                      _c("v-toolbar-title", [_vm._v("My Boards")]),
+                      _vm._v(" "),
+                      _c("v-spacer"),
+                      _vm._v(" "),
+                      _c(
+                        "v-btn",
+                        { attrs: { icon: "" } },
+                        [_c("v-icon", [_vm._v("search")])],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list",
+                    { attrs: { "two-line": "" } },
+                    [
+                      _vm._l(_vm.boards, function(board, index) {
+                        return [
+                          _c(
+                            "v-list-tile",
+                            {
+                              key: board.id,
+                              on: { click: function($event) {} }
+                            },
+                            [
+                              _c(
+                                "v-list-tile-content",
+                                [
+                                  _c("v-list-tile-title", {
+                                    domProps: {
+                                      innerHTML: _vm._s(board.description)
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("v-list-tile-sub-title", {
+                                    domProps: { innerHTML: _vm._s(board.date) }
+                                  })
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ]
+                      })
+                    ],
+                    2
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-e8ff3f66", module.exports)
   }
 }
 
