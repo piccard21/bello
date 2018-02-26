@@ -29,7 +29,7 @@
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items class="hidden-xs-only">
-                <v-btn flat v-for="item in menuItems" :key="item.title" router :to="item.link"><v-icon left>{{item.icon}}</v-icon>{{item.title}}</v-btn>
+                <v-btn flat v-for="item in menuItems" :key="item.title" :to="item.link"><v-icon left>{{item.icon}}</v-icon>{{item.title}}</v-btn>
             </v-toolbar-items>
         </v-toolbar>
 
@@ -44,7 +44,7 @@
     export default {
         name: 'App',
         data: () => ({
-            drawer: false,
+            drawer: null,
             menuItems: [{
                 icon: 'accessibility',
                 title: 'Welcome',
